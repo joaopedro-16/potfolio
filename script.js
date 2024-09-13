@@ -7,7 +7,7 @@ document.getElementById('btnAbout').addEventListener('click', function () {
 });
 
 document.getElementById('btnProjects').addEventListener('click', function () {
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('projects1').scrollIntoView({ behavior: 'smooth' });
 });
 
 document.getElementById('btnContact').addEventListener('click', function () {
