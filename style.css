@@ -90,6 +90,7 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 30px;
   background: linear-gradient(to right, var(--main-bg-color-a), var(--main-bg-color-b)), url(assets/bg-img-1.jpg) no-repeat center / cover;
   padding: 220px;
 
@@ -117,6 +118,8 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  gap: 30px;
+
   background: linear-gradient(to right, var(--main-bg-color-a), var(--main-bg-color-b)), url(assets/bg-img-2.jpg) no-repeat center / cover;
   padding: 220px;
 
@@ -142,7 +145,36 @@ html {
 
 #projects {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   background: linear-gradient(to right, var(--main-bg-color-a), var(--main-bg-color-b)), url(assets/bg-img-1.jpg) no-repeat center / cover;
+  padding: 20px 240px 20px 240px;
+
+
+  div {
+    width: 580px;
+    height: 400px;
+    img {
+      width: 500px;
+      height: 250px;
+    }
+    svg {
+      fill: var(--font-color);
+    }
+    .divText {
+      width: 580px;
+      h3 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 #contact {
@@ -152,6 +184,7 @@ html {
   align-items: center;
   position: relative;
   background: linear-gradient(to right, var(--main-bg-color-a), var(--main-bg-color-b)), url(assets/bg-img-2.jpg) no-repeat center / cover;
+  padding: 20px 240px 20px 240px;
   font-size: 2.4rem;
 
   .container {
@@ -267,4 +300,8 @@ html {
       fill: var(--font-footer-color);
     }
   }
+}
+
+@media(max-width: 1024px) {
+  
 }
